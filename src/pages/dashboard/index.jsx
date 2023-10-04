@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Paginate from '@/components/Paginate';
 import useFetch from '@/hooks/useFetch';
 import endPoints from '@/services/api';
-import { Chart } from '@/common/chart';
+import { Chart } from '@/common/Chart';
 const PRODUCT_LIMIT = 5;
 
 export default function Dashboard() {
