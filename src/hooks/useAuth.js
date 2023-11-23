@@ -16,6 +16,7 @@ export const useAuth = () => {
 };
 
 function useProviderAuth() {
+  const [newUser, setNewUser] = useState(null);
   const [user, setUser] = useState(null);
   const options = {
     headers: {
@@ -51,6 +52,8 @@ function useProviderAuth() {
   return {
     user,
     signIn,
-    logout
+    logout,
+    newUser,
+    setNewUser
   };
 }
